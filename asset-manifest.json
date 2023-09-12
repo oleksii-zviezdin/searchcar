@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oleksii-zviezdin/searchcar.git/static/css/main.7acaea2f.css",
+    "main.js": "/oleksii-zviezdin/searchcar.git/static/js/main.07d3183d.js",
+    "index.html": "/oleksii-zviezdin/searchcar.git/index.html",
+    "main.7acaea2f.css.map": "/oleksii-zviezdin/searchcar.git/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/oleksii-zviezdin/searchcar.git/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
