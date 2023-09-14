@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/oleksii-zviezdin/searchcar.git/static/css/main.7acaea2f.css",
-    "main.js": "/oleksii-zviezdin/searchcar.git/static/js/main.3cce5782.js",
-    "index.html": "/oleksii-zviezdin/searchcar.git/index.html",
-    "main.7acaea2f.css.map": "/oleksii-zviezdin/searchcar.git/static/css/main.7acaea2f.css.map",
-    "main.3cce5782.js.map": "/oleksii-zviezdin/searchcar.git/static/js/main.3cce5782.js.map"
+    "main.css": "/searchcar/static/css/main.bf49f164.css",
+    "main.js": "/searchcar/static/js/main.7f04f08f.js",
+    "static/media/background.jpg": "/searchcar/static/media/background.8d0dbe3b47185df42b37.jpg",
+    "index.html": "/searchcar/index.html",
+    "main.bf49f164.css.map": "/searchcar/static/css/main.bf49f164.css.map",
+    "main.7f04f08f.js.map": "/searchcar/static/js/main.7f04f08f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.3cce5782.js"
+    "static/css/main.bf49f164.css",
+    "static/js/main.7f04f08f.js"
   ]
 }
