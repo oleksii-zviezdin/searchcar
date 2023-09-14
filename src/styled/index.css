@@ -1,0 +1,17 @@
+@import-normalize; /* bring in normalize.css styles */
+
+body {
+  background-image: url('../img/background.jpg');
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-position: center top 30%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
