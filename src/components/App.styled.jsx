@@ -8,10 +8,10 @@ export const AppStyled = styled.div`
   height: 100vh;
 `;
 
-export const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+export const Container = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   padding-left: 128px;
   padding-right: 128px;
   padding-top: 150px;
@@ -26,4 +26,10 @@ export const Header1 = styled.h1`
   margin-bottom: 52px;
 
   text-shadow: 3px 3px 50px blueviolet;
+`;
+
+export const Main = styled.main`
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 `;
