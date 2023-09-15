@@ -23,7 +23,7 @@ export const Header1 = styled.h1`
   font-weight: 700;
   text-align: center;
   font-size: 45px;
-  margin-bottom: 12px;
+  margin-bottom: 52px;
 
-  text-shadow: 3px 3px 16px blueviolet;
+  text-shadow: 3px 3px 50px blueviolet;
 `;

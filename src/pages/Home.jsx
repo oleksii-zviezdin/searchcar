@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import { Container, Header1 } from 'components/App.styled';
+import { Button } from 'components/Button/Button.styled';
 
 export const Home = () => {
   return (
@@ -8,7 +8,7 @@ export const Home = () => {
         Finding your dream car has never been easier. Get ready for an
         unforgettable journey with us.
       </Header1>
-      <NavLink to="/catalog">LET'S GO</NavLink>
+      <Button to="/catalog">LET'S GO</Button>
     </Container>
   );
 };

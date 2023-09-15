@@ -5,7 +5,12 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: space-around;
   gap: 12px;
-  padding: 24px 0;
+  padding: 18px 0;
+  background: linear-gradient(
+    135deg,
+    rgba(97, 0, 161, 0.5),
+    rgba(213, 163, 247, 0.5)
+  );
 
   position: fixed;
   top: 0;

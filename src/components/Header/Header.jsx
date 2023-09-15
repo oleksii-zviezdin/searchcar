@@ -1,23 +1,15 @@
 import { HeaderStyled } from './Header.styled';
-import { NavLink } from 'react-router-dom';
-import styled from '@emotion/styled';
-
-const StyledLink = styled(NavLink)`
-  color: black;
-  &.active {
-    color: #d000ff;
-  }
-`;
+import { NavButton } from 'components/Button/Button.styled';
 
 export const Header = () => {
   return (
     <HeaderStyled>
       <nav>
-        <StyledLink to="/" end>
+        <NavButton to="/" end>
           Home
-        </StyledLink>
-        <StyledLink to="/catalog">Catalog</StyledLink>
-        <StyledLink to="/favorites">Favorites</StyledLink>
+        </NavButton>
+        <NavButton to="/catalog">Catalog</NavButton>
+        <NavButton to="/favorites">Favorites</NavButton>
       </nav>
     </HeaderStyled>
   );
