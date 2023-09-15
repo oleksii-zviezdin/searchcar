@@ -18,7 +18,7 @@ export const HeaderStyled = styled.header`
   width: 100vw;
   z-index: 100;
   backdrop-filter: blur(8px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 50px blueviolet;
 
   > nav {
     display: flex;
