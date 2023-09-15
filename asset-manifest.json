@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/searchcar/static/css/main.bf49f164.css",
-    "main.js": "/searchcar/static/js/main.eec7ac11.js",
+    "main.js": "/searchcar/static/js/main.a4a21231.js",
     "static/media/background.jpg": "/searchcar/static/media/background.8d0dbe3b47185df42b37.jpg",
     "index.html": "/searchcar/index.html",
     "main.bf49f164.css.map": "/searchcar/static/css/main.bf49f164.css.map",
-    "main.eec7ac11.js.map": "/searchcar/static/js/main.eec7ac11.js.map"
+    "main.a4a21231.js.map": "/searchcar/static/js/main.a4a21231.js.map"
   },
   "entrypoints": [
     "static/css/main.bf49f164.css",
-    "static/js/main.eec7ac11.js"
+    "static/js/main.a4a21231.js"
   ]
 }
