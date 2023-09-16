@@ -74,3 +74,22 @@ export const LearnMoreButton = styled.button`
     background: #0b44cd;
   }
 `;
+
+export const LoadMore = styled.button`
+  display: inline-block;
+  margin-top: 100px;
+  align-items: center;
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+
+  color: #3470ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  &:hover,
+  &:focus {
+    color: #0b44cd;
+  }
+`;

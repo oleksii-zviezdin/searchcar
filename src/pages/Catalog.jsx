@@ -7,13 +7,15 @@ import {
   ItemGallery,
   ShortDescription1,
   ShortDescription2,
+  FavIcon,
 } from 'components/Catalog/Catalog.styled';
-import { LearnMoreButton } from 'components/Button/Button.styled';
+import { LearnMoreButton, LoadMore } from 'components/Button/Button.styled';
 import { Container, Header1, Main } from 'components/App.styled';
 
 export const Catalog = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+  //   const [isButtonVisble, setIsButtonVisible] = useState(true);
 
   useEffect(() => {
     fetchCars(page)
@@ -48,7 +50,7 @@ export const Catalog = () => {
               accessories,
             }) => (
               <ItemGallery key={nanoid()}>
-                <div>
+                <div style={{ position: 'relative' }}>
                   <Img
                     src={`${img}`}
                     alt={`${make}`}
@@ -57,6 +59,7 @@ export const Catalog = () => {
                     loading="lazy"
                     className="gallery__image"
                   />
+                  <FavIcon></FavIcon>
                 </div>
                 <ShortDescription1>
                   <p>
@@ -138,9 +141,9 @@ export const Catalog = () => {
             )
           )}
         </CatalogGallery>
-        <button type="button" onClick={loadMoreData}>
+        <LoadMore type="button" onClick={loadMoreData}>
           Load more
-        </button>
+        </LoadMore>
       </Container>
     </Main>
   );

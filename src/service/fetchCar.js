@@ -8,6 +8,8 @@ const fetchCars = async page => {
     const response = await axios.get(`search-car?page=${page}&limit=8`);
     if (response.data.length <= 0)
       throw Error(`error.message: ${response.data.length}`);
+    console.log(`response.data.length: ${response.data.length}`);
+    console.log(`response: ${response.length}`);
     return response.data;
   } catch (error) {
     console.error('Помилка при отриманні даних з бекенду:', error);

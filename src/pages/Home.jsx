@@ -1,9 +1,14 @@
 import { AppStyled, Container, Header1 } from 'components/App.styled';
 import { Button } from 'components/Button/Button.styled';
+import backgroundImage from '../img/background.jpg';
+
+const style = {
+  backgroundImage: `url(${backgroundImage})`,
+};
 
 export const Home = () => {
   return (
-    <AppStyled>
+    <AppStyled style={style}>
       <Container>
         <Header1>
           Finding your dream car has never been easier. Get ready for an

@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import normalFavorite from '../../img/normal.svg';
+import avtiveFavorite from '../../img/active.svg';
 
 export const CatalogGallery = styled.ul`
   padding: 12px;
@@ -37,7 +39,6 @@ export const ItemGallery = styled.li`
 
   overflow: hidden;
   border-radius: 14px;
-  /* box-shadow: rgba(0, 0, 198, 0.75) 0px 7px 29px 0px; */
 `;
 
 export const ShortDescription1 = styled.div`
@@ -69,4 +70,25 @@ export const ShortDescription2 = styled.div`
   font-weight: 400;
   color: rgba(18, 20, 23, 0.5);
   line-height: calc(18 / 12);
+`;
+
+export const FavIcon = styled.div`
+  position: absolute;
+  right: 14px;
+  top: 14px;
+
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition-duration: 250ms;
+  cursor: pointer;
+
+  background-image: url(${normalFavorite});
+
+  &:hover,
+  &:focus {
+    background-image: url(${avtiveFavorite});
+  }
 `;
