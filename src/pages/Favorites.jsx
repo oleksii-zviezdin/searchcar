@@ -1,8 +1,8 @@
 import { Container, Header1 } from 'components/App.styled';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export const Favorites = () => {
-  const [favorite, setFavorite] = useState([]);
+  //   const [favorite, setFavorite] = useState([]);
 
   // const getFavorite =
   return (

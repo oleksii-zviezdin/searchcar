@@ -55,7 +55,7 @@ export const Catalog = () => {
                     width={274}
                     height={268}
                     loading="lazy"
-                    class="gallery__image"
+                    className="gallery__image"
                   />
                 </div>
                 <ShortDescription1>
