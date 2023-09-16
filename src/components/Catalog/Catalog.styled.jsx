@@ -9,7 +9,8 @@ export const CatalogGallery = styled.ul`
   border-radius: 14px;
   row-gap: 50px;
   flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.504) 2.5%;
+  background: rgba(255, 255, 255, 0.75) 2.5%;
+  box-shadow: rgba(53, 53, 76, 0.5) 0px 7px 29px 0px;
 `;
 
 export const Img = styled.img`
@@ -17,36 +18,33 @@ export const Img = styled.img`
 
   object-fit: cover;
   object-position: center top;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 0px 29px 0px;
   background: linear-gradient(
       180deg,
       rgba(18, 20, 23, 0.5) 2.5%,
       rgba(18, 20, 23, 0) 41.07%
     ),
     #f3f3f2;
+
+  transition-duration: 250ms;
 `;
 
 export const ItemGallery = styled.li`
   width: 274px;
-  height: auto;
-  outline: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   overflow: hidden;
   border-radius: 14px;
-  box-shadow: rgba(100, 100, 111, 0.75) 0px 7px 29px 0px;
-  background: rgba(234, 187, 255, 0.5) 2.5%;
-
-  transition-duration: 250ms;
-
-  &:hover,
-  &:focus {
-    scale: 1.025;
-    /* box-shadow: 0px 0px 18px #7d26a2; */
-    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
-  }
+  /* box-shadow: rgba(0, 0, 198, 0.75) 0px 7px 29px 0px; */
 `;
 
 export const ShortDescription1 = styled.div`
   display: flex;
   justify-content: space-between;
+  text-align: left;
+  gap: 12px;
 
   margin-top: 14px;
   padding-right: 9px;
@@ -61,6 +59,7 @@ export const ShortDescription1 = styled.div`
 export const ShortDescription2 = styled.div`
   display: flex;
   justify-content: space-between;
+  text-align: left;
 
   margin-top: 8px;
   padding-right: 9px;

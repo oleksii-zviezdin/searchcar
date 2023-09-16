@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const AppStyled = styled.div`
-  background-image: url('/img/background.jpg');
+  background-image: url('./img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -25,7 +25,7 @@ export const Header1 = styled.h1`
   font-size: 45px;
   margin-bottom: 52px;
 
-  text-shadow: 3px 3px 50px blueviolet;
+  text-shadow: 3px 3px 50px blue;
 `;
 
 export const Main = styled.main`

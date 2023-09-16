@@ -8,29 +8,32 @@ import {
   ShortDescription1,
   ShortDescription2,
 } from 'components/Catalog/Catalog.styled';
+import { LearnMoreButton } from 'components/Button/Button.styled';
 import { Container, Header1, Main } from 'components/App.styled';
 
 export const Catalog = () => {
   const [data, setData] = useState([]);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
-    // Виклик функції запиту при завантаженні компонента
-    fetchCars()
+    fetchCars(page)
       .then(responseData => {
-        setData(responseData); // Оновлення стану з отриманими даними
+        setData(prevData => [...prevData, ...responseData]);
       })
       .catch(error => {
         console.log(error.message);
-        // Обробка помилок
       });
-  }, []); // Пустий масив дозволяє запустити ефект лише після монтування компонента
+  }, [page]);
 
+  const loadMoreData = () => {
+    setPage(page + 1);
+  };
+  console.log(data);
   return (
     <Main>
       <Container>
         <Header1>Search car to rent</Header1>
         <CatalogGallery>
-          {/* Тут відображаєте дані, отримані з бекенду */}
           {data.map(
             ({
               img,
@@ -58,7 +61,7 @@ export const Catalog = () => {
                 <ShortDescription1>
                   <p>
                     <span>{make}</span>{' '}
-                    <span style={{ color: 'blue' }}>{model}</span>,{' '}
+                    <span style={{ color: 'blue' }}>{model},</span>{' '}
                     <span>{year}</span>
                   </p>
                   <p>
@@ -67,18 +70,77 @@ export const Catalog = () => {
                 </ShortDescription1>
                 <ShortDescription2>
                   <p>
-                    {address.split(',')[2]}
-                    <span>|</span> {address.split(',')[1]}
-                    <span>|</span> {rentalCompany}
-                    <span>|</span> <span>{mileage}</span>
+                    {address?.split(',')[1]}
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>{' '}
+                    {address?.split(',')[2]}
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>{' '}
+                    {rentalCompany}
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>{' '}
+                    <span>{type}</span>
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>{' '}
+                    <span>{make}</span>
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>
+                    <span>{mileage}</span>
+                    <span
+                      style={{
+                        color: 'rgba(18, 20, 23, 0.10)',
+                        fontSize: '16px',
+                      }}
+                    >
+                      {' '}
+                      |{' '}
+                    </span>
+                    <span>{accessories[0]}</span>
                   </p>
                 </ShortDescription2>
-                <button>Learn more</button>
+                <LearnMoreButton>Learn more</LearnMoreButton>
               </ItemGallery>
             )
           )}
         </CatalogGallery>
-        <section></section>
+        <button type="button" onClick={loadMoreData}>
+          Load more
+        </button>
       </Container>
     </Main>
   );

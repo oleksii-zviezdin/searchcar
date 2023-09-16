@@ -8,8 +8,8 @@ export const HeaderStyled = styled.header`
   padding: 18px 0;
   background: linear-gradient(
     135deg,
-    rgba(97, 0, 161, 0.5),
-    rgba(213, 163, 247, 0.5)
+    rgba(0, 4, 111, 0.633),
+    rgba(32, 20, 255, 0.708)
   );
 
   position: fixed;
@@ -18,7 +18,7 @@ export const HeaderStyled = styled.header`
   width: 100vw;
   z-index: 100;
   backdrop-filter: blur(8px);
-  box-shadow: 0 5px 50px blueviolet;
+  box-shadow: 0 5px 50px blue;
 
   > nav {
     display: flex;

@@ -1,7 +1,7 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-  background-image: url('../img/background.jpg');
+  /* background-image: url('../img/background.jpg'); */
   background-size: 100%;
   width: 100vw;
   height: 100vh;

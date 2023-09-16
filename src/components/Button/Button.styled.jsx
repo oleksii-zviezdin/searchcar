@@ -10,19 +10,19 @@ export const Button = styled(NavLink)`
   font-weight: 700;
   text-decoration: none;
   color: #ddcbe5;
-  text-shadow: 0px 0px 8px rgb(210, 132, 244);
+  text-shadow: 0px 0px 12px rgb(170, 167, 255);
   transition-duration: 250ms;
   padding: 14px;
   border-radius: 12px;
-  background: #54007b;
-  outline: 2px solid #b300ff;
+  background: #000a7b;
+  outline: 2px solid #0004ff;
   outline-offset: -6px;
 
   &:hover,
   &:focus {
     scale: 1.05;
-    box-shadow: 0px 0px 18px #7d26a2;
-    outline: 4px solid #b300ff;
+    box-shadow: 0px 0px 18px #0004ff;
+    outline: 2px solid #0004ff;
     outline-offset: 4px;
   }
 `;
@@ -38,7 +38,7 @@ export const NavButton = styled(NavLink)`
   transition-duration: 250ms;
   padding: 14px;
   border-radius: 12px;
-  background: #9540bc;
+  background: #030097;
 
   &:hover,
   &:focus {
@@ -46,5 +46,31 @@ export const NavButton = styled(NavLink)`
     box-shadow: 0px 0px 18px #f3e9f7;
     outline: 2px solid #f3e9f7;
     outline-offset: -6px;
+  }
+`;
+
+export const LearnMoreButton = styled.button`
+  display: flex;
+  width: 274px;
+  padding: 12px 98px;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #3470ff;
+  border: none;
+  flex-shrink: 0;
+
+  transition-duration: 250ms;
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: calc(20 / 14);
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background: #0b44cd;
   }
 `;
