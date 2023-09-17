@@ -2,7 +2,7 @@
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-![Screenshot of the homepage]([https://ibb.co/QHQPvyS "Homepage Screenshot"](https://ibb.co/HhkYJjW))
+![Screenshot of the homepage](https://ibb.co/HhkYJjW)
 
 
 ## Table of Contents
@@ -22,19 +22,19 @@ This is an application for searching rental cars. You can browse different cars,
 
 The homepage provides a brief overview of the project and navigation to other pages.
 
-![Screenshot of the homepage]([screenshots/home.png](https://ibb.co/QHQPvyS))
+![Screenshot of the homepage](https://ibb.co/HhkYJjW)
 
 ### Catalog
 
 The "Catalog" page allows you to browse a list of available cars. You can view details for each car and add them to your favorites list.
 
-![Screenshot of the catalog page]([screenshots/catalog.png](https://ibb.co/3rXF89S))
+![Screenshot of the catalog page](https://ibb.co/3rXF89S)
 
 ### Favorites
 
 The "Favorites" page displays cars that you've added to your favorites list. You can view and manage your favorite cars on this page.
 
-![Screenshot of the favorites page]([screenshots/favorites.png](https://ibb.co/HhkYJjW))
+![Screenshot of the favorites page](https://ibb.co/HhkYJjW)
 
 ## Features
 
