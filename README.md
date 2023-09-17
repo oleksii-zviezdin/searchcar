@@ -3,17 +3,17 @@
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
 <ul style="display: flex; list-style: none;">
-  <li>
+  <li style="flex: 1; margin: 0 10px;">
     <div>
       <a href="https://ibb.co/QHQPvyS" ><img style="width: 25%;" src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
     </div>
   </li>
-  <li>
+  <li style="flex: 1; margin: 0 10px;">
     <div>
       <a href="https://ibb.co/3rXF89S"><img style="width: 25%" src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" border="0"></a>
     </div>
   </li>
-  <li>
+  <li style="flex: 1; margin: 0 10px;">
     <div>
        <a href="https://ibb.co/HhkYJjW"><img style="width: 25%" src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
     </div>
@@ -37,7 +37,7 @@ This is an application for searching rental cars. You can browse different cars,
 
 ### Homepage
 
-The homepage provides a brief overview of the project and navigation to other pages.
+The homepage provides a brief overview of the webpage "Search Car Website" and navigation to other pages.
 
 <div>
   <a href="https://ibb.co/QHQPvyS"><img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
@@ -54,7 +54,7 @@ The "Catalog" page allows you to browse a list of available cars. You can view d
 
 ### Favorites
 
-The "Favorites" page displays cars that you've added to your favorites list. You can view and manage your favorite cars on this page.
+The "Favorites" page displays cars that you've added to your favorites list. You can view your favorite cars on this page even after reloading the page.
 
 <div>
   <a href="https://ibb.co/HhkYJjW"><img src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
