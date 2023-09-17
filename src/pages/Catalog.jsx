@@ -25,7 +25,6 @@ export const Catalog = () => {
   }, [page, isFavorite]);
 
   const toggleFavorite = id => {
-    // Перевіряємо, чи обраний автомобіль вже існує в обраному
     const favorites = JSON.parse(localStorage.getItem('myFavorite')) || [];
 
     const isCarInFavorites = favorites.find(car => car.id === id);
@@ -37,9 +36,9 @@ export const Catalog = () => {
 
         const updatedFavorites = [...isFavorite];
         if (updatedFavorites.includes(id)) {
-          updatedFavorites.splice(updatedFavorites.indexOf(id), 1); // Видалити id
+          updatedFavorites.splice(updatedFavorites.indexOf(id), 1);
         } else {
-          updatedFavorites.push(id); // Додати id
+          updatedFavorites.push(id);
         }
         setIsFavorite(updatedFavorites);
 
@@ -58,7 +57,6 @@ export const Catalog = () => {
     setPage(page + 1);
   };
 
-  console.log(data);
   return (
     <Main>
       <Container>

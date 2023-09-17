@@ -2,7 +2,6 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'https://648dc2902de8d0ea11e82f79.mockapi.io/api/v1/';
 
-// Функція для отримання даних з бекенду
 const fetchCars = async page => {
   const limit = 8;
   try {

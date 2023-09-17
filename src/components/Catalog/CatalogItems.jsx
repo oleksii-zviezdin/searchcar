@@ -11,7 +11,6 @@ import { useFavorite } from 'service/FavoriteContext';
 
 export const CatalogItems = ({ data, handleFavorite }) => {
   const { isFavorite } = useFavorite();
-  console.log(`isFavorite:${isFavorite}`);
   return (
     <>
       {data.map(
