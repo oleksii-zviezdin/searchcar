@@ -41,6 +41,7 @@ export const NavButton = styled(NavLink)`
   background: #030097;
 
   &:hover,
+  &:active,
   &:focus {
     scale: 1.05;
     box-shadow: 0px 0px 18px #f3e9f7;

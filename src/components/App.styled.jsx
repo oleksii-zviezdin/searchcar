@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const AppStyled = styled.div`
-  background-image: url('./img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;

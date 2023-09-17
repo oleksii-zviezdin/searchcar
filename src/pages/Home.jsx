@@ -6,6 +6,8 @@ const style = {
   backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  backgroundposition: 'center center',
+  backgroundPositionY: '50%',
 };
 
 export const Home = () => {

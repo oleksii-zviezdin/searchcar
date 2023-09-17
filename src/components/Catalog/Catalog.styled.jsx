@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import normalFavorite from '../../img/normal.svg';
 import avtiveFavorite from '../../img/active.svg';
 
-export const CatalogGallery = styled.ul`
+export const GalleryCatalog = styled.ul`
   padding: 12px;
   width: 100%;
   display: flex;
@@ -72,7 +72,7 @@ export const ShortDescription2 = styled.div`
   line-height: calc(18 / 12);
 `;
 
-export const FavIcon = styled.div`
+export const AddFavIcon = styled.div`
   position: absolute;
   right: 14px;
   top: 14px;
@@ -90,5 +90,26 @@ export const FavIcon = styled.div`
   &:hover,
   &:focus {
     background-image: url(${avtiveFavorite});
+  }
+`;
+
+export const RemoveFavIcon = styled.div`
+  position: absolute;
+  right: 14px;
+  top: 14px;
+
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transition-duration: 250ms;
+  cursor: pointer;
+
+  background-image: url(${avtiveFavorite});
+
+  &:hover,
+  &:focus {
+    background-image: url(${normalFavorite});
   }
 `;
