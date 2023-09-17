@@ -2,23 +2,23 @@
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-<ul style="list-style: none; display: flex; padding: 0;">
-  <li style="margin-right: 10px;">
+<div style="list-style: none; display: flex; padding: 0;">
+  <div style="margin-right: 10px;">
     <a href="https://ibb.co/QHQPvyS">
       <img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" style="width: 25%;" border="0">
     </a>
-  </li>
-  <li style="margin-right: 10px;">
+  </div>
+  <div style="margin-right: 10px;">
     <a href="https://ibb.co/3rXF89S">
       <img src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" style="width: 25%;" border="0">
     </a>
-  </li>
-  <li>
+  </div>
+  <div>
     <a href="https://ibb.co/HhkYJjW">
       <img src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" style="width: 25%;" border="0">
     </a>
-  </li>
-</ul>
+  </div>
+</div>
 
 ## Table of Contents
 
