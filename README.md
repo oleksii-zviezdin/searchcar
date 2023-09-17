@@ -2,7 +2,7 @@
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-![Screenshot of the homepage]([screenshots/home.png](https://ibb.co/QHQPvyS))
+![Screenshot of the homepage](https://ibb.co/QHQPvyS)
 
 ## Table of Contents
 
@@ -87,4 +87,4 @@ Demo
 You can see a live demo of the website at [https://www.example.com](https://oleksii-zviezdin.github.io/searchcar).
 
 Authors
-Oleksii Zviezdin - [GitHub](https://github.com/oleksii-zviezdin)https://github.com/oleksii-zviezdin
+Oleksii Zviezdin - <a href="https://github.com/oleksii-zviezdin">GitHub Author</a>
