@@ -1,7 +1,7 @@
 # Search Car Website
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
-
+<div>
    <tr>
       <td style="padding: 0;">
         <a href="https://ibb.co/QHQPvyS">
@@ -19,6 +19,7 @@ This is an application for searching rental cars. You can browse different cars,
         </a>
       </td>
     </tr>
+</div>
 
 ## Table of Contents
 
