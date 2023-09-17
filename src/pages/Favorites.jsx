@@ -5,7 +5,7 @@ import {
   ShortDescription1,
   ShortDescription2,
   Img,
-  FavIcon,
+  //   FavIcon,
 } from 'components/Catalog/Catalog.styled';
 import { LearnMoreButton } from 'components/Button/Button.styled';
 import { CatalogGallery } from 'components/Catalog/Catalog.styled';
