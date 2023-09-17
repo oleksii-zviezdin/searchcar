@@ -24,14 +24,16 @@ This is an application for searching rental cars. You can browse different cars,
 
 The homepage provides a brief overview of the project and navigation to other pages.
 
-![Screenshot of the homepage](https://ibb.co/HhkYJjW)
+<div>
+  <a href="https://ibb.co/QHQPvyS"><img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
+</div>
 
 ### Catalog
 
 The "Catalog" page allows you to browse a list of available cars. You can view details for each car and add them to your favorites list.
 
 <div>
-  <a href="https://ibb.co/QHQPvyS"><img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
+ <a href="https://ibb.co/3rXF89S"><img src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" border="0"></a>
 </div>
 
 
