@@ -65,7 +65,13 @@ This project was created using the following technologies:
 - React.js
 - React Router
 - HTML/CSS
--
+- localStorage
+- npm
+- Git
+- GitHub Pages
+- Axios/Fetch (for API interaction)
+- Styled-components
+- Component-based architecture
 
 ## Running Locally
 
