@@ -1,66 +1,90 @@
 # Search Car Website
 
-Це додаток для пошуку автомобілів для оренди. Ви можете переглядати різні автомобілі, отримувати інформацію про них та додавати їх до списку улюблених.
+This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-![Скріншот головної сторінки](screenshots/home.png)
+![Screenshot of the homepage]([screenshots/home.png](https://ibb.co/QHQPvyS))
 
-## Вміст
+## Table of Contents
 
-- [Опис](#Опис)
-- [Властивості](#Властивості)
-- [Використання](#Використання)
-- [Технології](#Технології)
-- [Запуск локально](#Запуск-локально)
-- [Демо](#Демо)
-- [Автори](#Автори)
-- [Ліцензія](#Ліцензія)
+- [Description](#Description)
+- [Features](#Features)
+- [Usage](#Usage)
+- [Technologies](#Technologies)
+- [Running Locally](#Running-Locally)
+- [Demo](#Demo)
+- [Authors](#Authors)
+- [License](#License)
 
-## Опис
+## Description
 
-### Головна сторінка
+### Homepage
 
-На головній сторінці є короткий опис проекту та навігація до інших сторінок.
+The homepage provides a brief overview of the project and navigation to other pages.
 
-![Скріншот головної сторінки](screenshots/home.png)
+![Screenshot of the homepage]([screenshots/home.png](https://ibb.co/QHQPvyS))
 
-### Каталог
+### Catalog
 
-Сторінка "Каталог" дозволяє вам переглядати список доступних автомобілів. Ви можете переглядати деталі кожного автомобіля та додавати їх до списку улюблених.
+The "Catalog" page allows you to browse a list of available cars. You can view details for each car and add them to your favorites list.
 
-![Скріншот сторінки "Каталог"](screenshots/catalog.png)
+![Screenshot of the catalog page]([screenshots/catalog.png](https://ibb.co/3rXF89S))
 
-### Улюблені
+### Favorites
 
-На сторінці "Улюблені" відображаються автомобілі, які ви додали до свого списку улюблених. Ви можете переглядати та управляти своїми улюбленими автомобілями на цій сторінці.
+The "Favorites" page displays cars that you've added to your favorites list. You can view and manage your favorite cars on this page.
 
-![Скріншот сторінки "Улюблені"](screenshots/favorites.png)
+![Screenshot of the favorites page]([screenshots/favorites.png](https://ibb.co/HhkYJjW))
 
-## Властивості
+## Features
 
-- Пошук автомобілів за різними критеріями.
-- Додавання та видалення автомобілів до/зі списку улюблених.
-- Зручна навігація між сторінками сайту.
-- Інформативні карточки автомобілів з фотографіями і деталями.
-- Завантаження додаткових автомобілів за допомогою кнопки "Завантажити ще".
+- Search for cars based on various criteria.
+- Add and remove cars from your favorites list.
+- Convenient navigation between website pages.
+- Informative car cards with photos and details.
+- Load more cars with the "Load More" button.
 
-## Використання
+## Usage
 
-Для використання цього проекту, вам потрібно встановити його локально на вашому комп'ютері. Для цього слідуйте інструкціям у розділі [Запуск локально](#Запуск-локально).
+To use this project, you need to set it up locally on your computer. Follow the instructions in the [Running Locally](#Running-Locally) section.
 
-## Технології
+## Technologies
 
-Цей проект створено з використанням таких технологій:
+This project was created using the following technologies:
 
 - JavaScript
 - React.js
 - React Router
 - HTML/CSS
+-
 
-## Запуск локально
+## Running Locally
 
-Для запуску проекту локально, виконайте наступні кроки:
+To run the project locally, follow these steps:
 
-1. Клонуйте репозиторій на свій комп'ютер:
+1. Clone the repository to your computer:
 
    ```shell
    git clone https://github.com/your-username/car-rental-website.git
+
+2. Navigate to the project directory:
+
+   ```shell
+   cd car-rental-website
+
+2. Install the required dependencies:
+
+   ```shell
+   npm install
+   
+3. Start the development server:
+
+   ```shell
+   npm start
+
+Open your web browser and go to http://localhost:3000 to view the website.
+
+Demo
+You can see a live demo of the website at [https://www.example.com](https://oleksii-zviezdin.github.io/searchcar).
+
+Authors
+Oleksii Zviezdin - [GitHub](https://github.com/oleksii-zviezdin)https://github.com/oleksii-zviezdin
