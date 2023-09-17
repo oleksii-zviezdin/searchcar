@@ -1,7 +1,7 @@
 # Search Car Website
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
-
+![Creating repo from a template step 1](./assets/template-step-1.png)
 ![Screenshot of the homepage](https://ibb.co/HhkYJjW)
 
 
