@@ -12,6 +12,7 @@ export const Catalog = () => {
   const { isFavorite, setIsFavorite } = useFavorite();
 
   useEffect(() => {
+    if (!isVisibleLoadMore) return;
     fetchCars(page)
       .then(({ responseData, totalResponseData, limit }) => {
         setData(prevData => [...prevData, ...responseData]);
@@ -22,7 +23,7 @@ export const Catalog = () => {
       .catch(error => {
         console.log(error.message);
       });
-  }, [page, isFavorite]);
+  }, [page, isFavorite, isVisibleLoadMore]);
 
   const toggleFavorite = id => {
     const favorites = JSON.parse(localStorage.getItem('myFavorite')) || [];
