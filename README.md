@@ -30,7 +30,6 @@ This is an application for searching rental cars. You can browse different cars,
 - [Running Locally](#Running-Locally)
 - [Demo](#Demo)
 - [Authors](#Authors)
-- [License](#License)
 
 ## Description
 
