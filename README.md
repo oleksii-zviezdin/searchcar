@@ -2,24 +2,23 @@
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-<ul style="display: flex; list-style: none;">
-  <li style="flex: 1; margin: 0 10px;">
-    <div>
-      <a href="https://ibb.co/QHQPvyS" ><img style="width: 25%;" src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
-    </div>
+<ul style="list-style: none; display: flex; padding: 0;">
+  <li style="margin-right: 10px;">
+    <a href="https://ibb.co/QHQPvyS">
+      <img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" style="width: 25%;" border="0">
+    </a>
   </li>
-  <li style="flex: 1; margin: 0 10px;">
-    <div>
-      <a href="https://ibb.co/3rXF89S"><img style="width: 25%" src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" border="0"></a>
-    </div>
+  <li style="margin-right: 10px;">
+    <a href="https://ibb.co/3rXF89S">
+      <img src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" style="width: 25%;" border="0">
+    </a>
   </li>
-  <li style="flex: 1; margin: 0 10px;">
-    <div>
-       <a href="https://ibb.co/HhkYJjW"><img style="width: 25%" src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
-    </div>
+  <li>
+    <a href="https://ibb.co/HhkYJjW">
+      <img src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" style="width: 25%;" border="0">
+    </a>
   </li>
 </ul>
-
 
 ## Table of Contents
 
