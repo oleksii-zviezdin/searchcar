@@ -4,10 +4,14 @@ import {
   ShortDescription1,
   ShortDescription2,
   AddFavIcon,
+  RemoveFavIcon,
 } from 'components/Catalog/Catalog.styled';
 import { LearnMoreButton } from 'components/Button/Button.styled';
+import { useFavorite } from 'service/FavoriteContext';
 
 export const CatalogItems = ({ data, handleFavorite }) => {
+  const { isFavorite } = useFavorite();
+  console.log(`isFavorite:${isFavorite}`);
   return (
     <>
       {data.map(
@@ -34,7 +38,14 @@ export const CatalogItems = ({ data, handleFavorite }) => {
                 loading="lazy"
                 className="gallery__image"
               />
-              <AddFavIcon onClick={() => handleFavorite(id)}></AddFavIcon>
+              {!isFavorite.includes(id) && (
+                <AddFavIcon onClick={() => handleFavorite(id)}></AddFavIcon>
+              )}
+              {isFavorite.includes(id) && (
+                <RemoveFavIcon
+                  onClick={() => handleFavorite(id)}
+                ></RemoveFavIcon>
+              )}
             </div>
             <ShortDescription1>
               <p>
@@ -98,7 +109,7 @@ export const CatalogItems = ({ data, handleFavorite }) => {
                   {' '}
                   |{' '}
                 </span>
-                <span>{mileage}</span>
+                <span>{mileage.toLocaleString('en-US')}</span>
                 <span
                   style={{
                     color: 'rgba(18, 20, 23, 0.10)',
@@ -108,7 +119,7 @@ export const CatalogItems = ({ data, handleFavorite }) => {
                   {' '}
                   |{' '}
                 </span>
-                <span>{accessories[0].split(' ').slice(0, 3).join(' ')}</span>
+                <span>{accessories[0].split(' ').slice(0, 2).join(' ')}</span>
               </p>
             </ShortDescription2>
             <LearnMoreButton>Learn more</LearnMoreButton>

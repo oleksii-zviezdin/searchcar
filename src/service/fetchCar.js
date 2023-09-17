@@ -10,8 +10,7 @@ const fetchCars = async page => {
     const totalResponse = await axios.get(`search-car`);
     if (response.data.length <= 0)
       throw Error(`error.message: ${response.data.length}`);
-    console.log(`response.data.length: ${response.data.length}`);
-    console.log(`response: ${response.length}`);
+
     return {
       responseData: response.data,
       totalResponseData: totalResponse.data,

@@ -11,8 +11,6 @@ export const GalleryCatalog = styled.ul`
   border-radius: 14px;
   row-gap: 50px;
   flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.75) 2.5%;
-  box-shadow: rgba(53, 53, 76, 0.5) 0px 7px 29px 0px;
 `;
 
 export const Img = styled.img`
