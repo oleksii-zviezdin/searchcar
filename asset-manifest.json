@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/searchcar/static/css/main.db542f74.css",
-    "main.js": "/searchcar/static/js/main.f19b8088.js",
+    "main.js": "/searchcar/static/js/main.059b68aa.js",
     "static/media/background.jpg": "/searchcar/static/media/background.8d0dbe3b47185df42b37.jpg",
     "index.html": "/searchcar/index.html",
     "static/media/normal.svg": "/searchcar/static/media/normal.d99f8f3d09272829436a48364c59e7fc.svg",
     "static/media/active.svg": "/searchcar/static/media/active.ca328ba8fd1a33232c33b80a393a7bca.svg",
     "main.db542f74.css.map": "/searchcar/static/css/main.db542f74.css.map",
-    "main.f19b8088.js.map": "/searchcar/static/js/main.f19b8088.js.map"
+    "main.059b68aa.js.map": "/searchcar/static/js/main.059b68aa.js.map"
   },
   "entrypoints": [
     "static/css/main.db542f74.css",
-    "static/js/main.f19b8088.js"
+    "static/js/main.059b68aa.js"
   ]
 }
