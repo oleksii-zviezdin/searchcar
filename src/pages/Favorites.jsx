@@ -1,11 +1,11 @@
 import { Container, Header1 } from 'components/App.styled';
-import { nanoid } from 'nanoid';
 import { useState, useEffect } from 'react';
 import {
   ItemGallery,
   ShortDescription1,
   ShortDescription2,
   Img,
+  FavIcon,
 } from 'components/Catalog/Catalog.styled';
 import { LearnMoreButton } from 'components/Button/Button.styled';
 import { CatalogGallery } from 'components/Catalog/Catalog.styled';
@@ -27,6 +27,30 @@ export const Favorites = () => {
     }
   }, []);
 
+  //   const removeFavorite = id => {
+  //     // Отримуємо поточний стан обраних автомобілів з localStorage
+  //     const currentFavorites =
+  //       JSON.parse(localStorage.getItem('myFavorite')) || [];
+
+  //     const carIndex = currentFavorites?.findIndex(car => car.id === id);
+
+  //     if (carIndex === -1) {
+  //       // Обробка випадку, коли автомобіль не знайдено
+  //       return;
+  //     }
+
+  //     // Перевіряємо, чи обраний автомобіль вже існує в обраному
+  //     const arrayFavoriteWithOutCarById = currentFavorites.filter(
+  //       car => car.id === id
+  //     );
+
+  //     // Зберігаємо оновлений список обраних автомобілів у localStorage
+  //     localStorage.setItem(
+  //       'myFavorite',
+  //       JSON.stringify(arrayFavoriteWithOutCarById)
+  //     );
+  //   };
+
   return (
     <Container>
       <Header1>Your favorites cars</Header1>
@@ -37,6 +61,7 @@ export const Favorites = () => {
         <CatalogGallery>
           {favorite?.map(
             ({
+              id,
               img,
               year,
               make,
@@ -48,8 +73,8 @@ export const Favorites = () => {
               rentalPrice,
               accessories,
             }) => (
-              <ItemGallery key={nanoid()}>
-                <div>
+              <ItemGallery key={id}>
+                <div style={{ position: 'relative' }}>
                   <Img
                     src={`${img}`}
                     alt={`${make}`}
@@ -58,6 +83,7 @@ export const Favorites = () => {
                     loading="lazy"
                     className="gallery__image"
                   />
+                  {/* <FavIcon onClick={() => removeFavorite(id)}></FavIcon> */}
                 </div>
                 <ShortDescription1>
                   <p>

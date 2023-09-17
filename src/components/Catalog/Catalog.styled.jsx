@@ -35,7 +35,7 @@ export const ItemGallery = styled.li`
   width: 274px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 
   overflow: hidden;
   border-radius: 14px;

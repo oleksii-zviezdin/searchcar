@@ -1,6 +1,6 @@
 import fetchCars from 'service/fetchCar';
 import React, { useEffect, useState } from 'react';
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 import {
   CatalogGallery,
   Img,
@@ -15,7 +15,7 @@ import { Container, Header1, Main } from 'components/App.styled';
 export const Catalog = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  //   const [isButtonVisble, setIsButtonVisible] = useState(true);
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     fetchCars(page)
@@ -26,6 +26,25 @@ export const Catalog = () => {
         console.log(error.message);
       });
   }, [page]);
+
+  const toggleFavorite = id => {
+    // Перевіряємо, чи обраний автомобіль вже існує в обраному
+    const isCarInFavorites = favorites.find(car => car.id === id);
+
+    if (!isCarInFavorites) {
+      const selectedCar = data.find(car => car.id === id);
+      if (selectedCar) {
+        setFavorites(prevData => [...prevData, selectedCar]);
+        return;
+      }
+    }
+
+    const updatedFavorites = favorites.filter(car => car.id !== id);
+    // Оновлюємо стан обраних автомобілів
+    setFavorites(updatedFavorites);
+  };
+
+  localStorage.setItem('myFavorite', JSON.stringify(favorites));
 
   const loadMoreData = () => {
     setPage(page + 1);
@@ -38,6 +57,7 @@ export const Catalog = () => {
         <CatalogGallery>
           {data.map(
             ({
+              id,
               img,
               year,
               make,
@@ -49,7 +69,7 @@ export const Catalog = () => {
               rentalPrice,
               accessories,
             }) => (
-              <ItemGallery key={nanoid()}>
+              <ItemGallery key={id}>
                 <div style={{ position: 'relative' }}>
                   <Img
                     src={`${img}`}
@@ -59,7 +79,7 @@ export const Catalog = () => {
                     loading="lazy"
                     className="gallery__image"
                   />
-                  <FavIcon></FavIcon>
+                  <FavIcon onClick={() => toggleFavorite(id)}></FavIcon>
                 </div>
                 <ShortDescription1>
                   <p>

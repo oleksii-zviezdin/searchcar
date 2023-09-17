@@ -4,6 +4,8 @@ import backgroundImage from '../img/background.jpg';
 
 const style = {
   backgroundImage: `url(${backgroundImage})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
 };
 
 export const Home = () => {
