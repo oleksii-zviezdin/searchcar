@@ -2,7 +2,6 @@
 
 This is an application for searching rental cars. You can browse different cars, view information about them, and add them to your favorites list.
 
-<div style="margin-left: auto; margin-right: auto">
   <table style="border: none;">
    <tr>
       <td style="padding: 4px;">
@@ -22,7 +21,6 @@ This is an application for searching rental cars. You can browse different cars,
       </td>
     </tr>
   </table>
-</div>
 
 ## Table of Contents
 
