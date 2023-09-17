@@ -5,17 +5,17 @@ This is an application for searching rental cars. You can browse different cars,
 <ul style="display: flex;">
   <li>
     <div>
-      <a href="https://ibb.co/QHQPvyS" ><img style="width=25%" src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
+      <a href="https://ibb.co/QHQPvyS" ><img style="width: 25%;" src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" border="0"></a>
     </div>
   </li>
   <li>
     <div>
-      <a href="https://ibb.co/3rXF89S"><img style="width=25%" src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" border="0"></a>
+      <a href="https://ibb.co/3rXF89S"><img style="width: 25%" src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" border="0"></a>
     </div>
   </li>
   <li>
     <div>
-       <a href="https://ibb.co/HhkYJjW"><img style="width=25%" src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
+       <a href="https://ibb.co/HhkYJjW"><img style="width: 25%" src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
     </div>
   </li>
   
