@@ -18,7 +18,6 @@ This is an application for searching rental cars. You can browse different cars,
        <a href="https://ibb.co/HhkYJjW"><img style="width: 25%" src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" border="0"></a>
     </div>
   </li>
-  
 </ul>
 
 
