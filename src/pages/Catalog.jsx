@@ -3,13 +3,12 @@ import React, { useEffect, useState } from 'react';
 import { LoadMore } from 'components/Button/Button.styled';
 import { Container, Header1, Main } from 'components/App.styled';
 import { CatalogGallery } from 'components/Catalog/CatalogGallery';
-import { useFavorite } from 'service/FavoriteContext';
 
 export const Catalog = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [isVisibleLoadMore, setIsVisibleLoadMore] = useState(true);
-  const { isFavorite, setIsFavorite } = useFavorite();
+  const [isFavorite, setIsFavorite] = useState([]);
 
   useEffect(() => {
     if (!isVisibleLoadMore) return;
@@ -26,31 +25,35 @@ export const Catalog = () => {
   }, [page, isFavorite, isVisibleLoadMore]);
 
   const toggleFavorite = id => {
-    const favorites = JSON.parse(localStorage.getItem('myFavorite')) || [];
+    const myFavorite = JSON.parse(localStorage.getItem('myFavorite')) || [];
+    const favorites = JSON.parse(localStorage.getItem('favoriteId')) || [];
+    console.log(`favorites: ${favorites}`);
 
-    const isCarInFavorites = favorites.find(car => car.id === id);
-
+    const isCarInFavorites = myFavorite.find(car => car.id === id);
     if (!isCarInFavorites) {
       const selectedCar = data.find(car => car.id === id);
-      if (selectedCar) {
-        const apdateAddFavorites = [...favorites, selectedCar];
+      const apdateAddFavorites = [...myFavorite, selectedCar];
+      localStorage.setItem('myFavorite', JSON.stringify(apdateAddFavorites));
 
-        const updatedFavorites = [...isFavorite];
-        if (updatedFavorites.includes(id)) {
-          updatedFavorites.splice(updatedFavorites.indexOf(id), 1);
-        } else {
-          updatedFavorites.push(id);
-        }
-        setIsFavorite(updatedFavorites);
-
-        localStorage.setItem('myFavorite', JSON.stringify(apdateAddFavorites));
-        return;
+      if (favorites.includes(id)) {
+        favorites.splice(favorites.indexOf(id), 1);
+      } else {
+        favorites.push(id);
       }
+      setIsFavorite(favorites);
+      localStorage.setItem('favoriteId', JSON.stringify(favorites));
+      return;
     }
 
-    const updateRemoveFavorites = favorites.filter(car => car.id !== id);
-    const updateFavoriteId = isFavorite.filter(favId => favId !== id);
-    setIsFavorite(updateFavoriteId);
+    if (favorites.includes(id)) {
+      favorites.splice(favorites.indexOf(id), 1);
+    } else {
+      favorites.push(id);
+    }
+    setIsFavorite(favorites);
+    localStorage.setItem('favoriteId', JSON.stringify(favorites));
+
+    const updateRemoveFavorites = myFavorite.filter(car => car.id !== id);
     localStorage.setItem('myFavorite', JSON.stringify(updateRemoveFavorites));
   };
 

@@ -7,10 +7,9 @@ import {
   RemoveFavIcon,
 } from 'components/Catalog/Catalog.styled';
 import { LearnMoreButton } from 'components/Button/Button.styled';
-import { useFavorite } from 'service/FavoriteContext';
 
 export const CatalogItems = ({ data, handleFavorite }) => {
-  const { isFavorite } = useFavorite();
+  const favorites = JSON.parse(localStorage.getItem('favoriteId')) || [];
   return (
     <>
       {data.map(
@@ -37,10 +36,10 @@ export const CatalogItems = ({ data, handleFavorite }) => {
                 loading="lazy"
                 className="gallery__image"
               />
-              {!isFavorite.includes(id) && (
+              {!favorites.includes(id) && (
                 <AddFavIcon onClick={() => handleFavorite(id)}></AddFavIcon>
               )}
-              {isFavorite.includes(id) && (
+              {favorites.includes(id) && (
                 <RemoveFavIcon
                   onClick={() => handleFavorite(id)}
                 ></RemoveFavIcon>

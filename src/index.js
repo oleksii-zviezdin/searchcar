@@ -7,7 +7,7 @@ import './styled/reset.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/searchcar">
       <App />
     </BrowserRouter>
   </React.StrictMode>

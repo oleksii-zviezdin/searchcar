@@ -20,14 +20,13 @@ export const Favorites = () => {
   }, [favorite]);
 
   const removeFavorite = id => {
-    const favorites = JSON.parse(localStorage.getItem('myFavorite')) || [];
+    const myFavorite = JSON.parse(localStorage.getItem('myFavorite')) || [];
+    const favorites = JSON.parse(localStorage.getItem('favoriteId')) || [];
 
-    const isCarInFavorites = favorites.find(car => car.id === id);
-
-    if (!isCarInFavorites) return;
-
-    const updateRemoveFavorites = favorites.filter(car => car.id !== id);
+    const updateRemoveFavorites = myFavorite.filter(car => car.id !== id);
+    const updateFavorites = favorites.filter(carId => carId !== id);
     setFavorite(updateRemoveFavorites);
+    localStorage.setItem('favoriteId', JSON.stringify(updateFavorites));
     localStorage.setItem('myFavorite', JSON.stringify(updateRemoveFavorites));
   };
 
