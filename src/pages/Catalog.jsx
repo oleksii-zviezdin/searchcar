@@ -8,7 +8,7 @@ export const Catalog = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [isVisibleLoadMore, setIsVisibleLoadMore] = useState(true);
-  const [isFavorite, setIsFavorite] = useState([]);
+  const [, setIsFavorite] = useState([]);
 
   useEffect(() => {
     if (!isVisibleLoadMore) return;
@@ -22,12 +22,11 @@ export const Catalog = () => {
       .catch(error => {
         console.log(error.message);
       });
-  }, [page, isFavorite, isVisibleLoadMore]);
+  }, [page, isVisibleLoadMore]);
 
   const toggleFavorite = id => {
     const myFavorite = JSON.parse(localStorage.getItem('myFavorite')) || [];
     const favorites = JSON.parse(localStorage.getItem('favoriteId')) || [];
-    console.log(`favorites: ${favorites}`);
 
     const isCarInFavorites = myFavorite.find(car => car.id === id);
     if (!isCarInFavorites) {
