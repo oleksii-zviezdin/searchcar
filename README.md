@@ -5,17 +5,17 @@ This is an application for searching rental cars. You can browse different cars,
    <tr>
       <td style="padding: 0;">
         <a href="https://ibb.co/QHQPvyS">
-          <img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" style="width: 25%;" border="1px">
+          <img src="https://i.ibb.co/t2KqpVj/HomePage.png" alt="HomePage" style="width: 25%;" border="0">
         </a>
       </td>
       <td style="padding: 0;">
         <a href="https://ibb.co/3rXF89S">
-          <img src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" style="width: 25%;" border="1px">
+          <img src="https://i.ibb.co/JBLpbwr/Catalog-Page.png" alt="Catalog-Page" style="width: 25%;" border="0">
         </a>
       </td>
       <td style="padding: 0;">
         <a href="https://ibb.co/HhkYJjW">
-          <img src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" style="width: 25%;" border="1px">
+          <img src="https://i.ibb.co/DrSkqZx/Favorite-Page.png" alt="Favorite-Page" style="width: 25%;" border="0">
         </a>
       </td>
     </tr>
@@ -115,5 +115,5 @@ Open your web browser and go to http://localhost:3000 to view the website.
 Demo
 You can see a live demo of the website at [https://www.example.com](https://oleksii-zviezdin.github.io/searchcar).
 
-Authors
-Oleksii Zviezdin - <a href="https://github.com/oleksii-zviezdin">GitHub Author</a>
+## Authors
+   Oleksii Zviezdin - <a href="https://github.com/oleksii-zviezdin">GitHub Author</a>
